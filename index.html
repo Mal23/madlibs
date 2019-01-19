@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>MadLib</title>
 </head>
 <body>
    <!-- Cooking with Dracula! 
@@ -14,12 +13,55 @@
     Then enjoy (adverb)-->
 
     <h1>Cooking with Dracula!</h1>
+    <h4>Please fill in the following:</h4>
 
-    <p>Please add one <input id = 'noun1'>(noun 1) to your <input id = 'adjective'> (adjective) stew.</p>
-    <p>Stir <input id = 'verb'> (verb) with your <input id = 'body part'> (body part).</p>
-    <p>Season with <input id = 'noun 2'> (noun 2).</p>
-    <p>Then enjoy <input id = 'adverb'>(adverb)! Ah-ah-ah!!!</p>
+    <!-- input & labels-->
+   <p> 
+       <label>
+             Noun:
+            <input id = "nounOne">
+        </label>
+    </p>
+    <p>
+        <label>
+             Adjective:
+            <input id="adjective">
+        </label>
+    </p>
+    <p>
+        <label>
+            Verb:
+            <input id ="verb">
+        </label>
+    </p>
+    <p>
+        <label>
+            Body Part:
+            <input id ="bodyPart">
+        </label>
+    </p>
+    <p>
+        <label>
+            Noun:
+            <input id="nounTwo">
+        </label>
+    </p>
+    <p>
+        <label>
+            adverb:
+            <input id="adverb">
+        </label>
+    </p>
 
-    <script src = 'main.js'></script>
+    <!-- Submit button -->
+    <p>
+        <button onclick="story()">Submit</button>
+    </p>
+
+    <!-- show story -->
+    <p id="madLib">Your MadLib will display here</p>
+
+
+<script src = 'main.js'></script>
 </body>
 </html>
