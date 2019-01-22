@@ -1,11 +1,11 @@
 function story() {
 
 // inputs by id
-var firstNounInput = document.getElementById('noun-one');
+var nounOneInput = document.getElementById('noun-one');
 var adjectiveInput = document.getElementById('adjective');
 var verbInput = document.getElementById('verb');
 var bodyPartInput = document.getElementById('body-part');
-var secondNounInput = document.getElementById('noun-two');
+var nounTwoInput = document.getElementById('noun-two');
 var adverbInput = document.getElementById('adverb');
 
 // get values out of inputs
@@ -17,7 +17,7 @@ var nounTwo = nounTwoInput.value;
 var adverb = adverbInput.value;
 
 // make the story
-var story = 'Please add one' + nounOne + ' ' + 'to your' + adjective + ' ' + 'with your' + bodyPart + ' ' + 'season with' + nounTwo + '. ' + 'Then enjoy' + adverb + ' ! ' + 'Ah-ah-ah';
+var story = 'Please add one' + ' ' + nounOne + ' ' + 'to your' +  ' ' + adjective + " " + 'stew. ' + 'Stir' + ' ' + verb + ' ' + 'with your' + ' ' + bodyPart  + '. ' + ' ' + 'Season with' + ' ' + nounTwo + '. ' + ' '  + 'Then enjoy' + ' ' + adverb + '! ' + ' ' + 'Ah-ah-ah';
 console.log(story);
 
 // display the story
